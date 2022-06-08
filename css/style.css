@@ -6,61 +6,46 @@
   --color5: #6cdfff;
 }
 
-/* header,
-footer {
-  background: url(../img/pattern.png), var(--color1);
-  background: url(../img/pattern.png),
-    -moz-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-  background: url(../img/pattern.png),
-    -webkit-linear-gradient(left, var(--color1) 0%, var(--color2) 100%);
-  background: url(../img/pattern.png),
-    linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
-  background-size: contain;
-} */ 
-
-.about,
-.write-me {
-  background-color: var(--color3);
+.modal-title {
+  max-width: 400px;
+  max-height: 1800px;
+font-size: small;
 }
 
-.icon-vkontakte:before {
-  content: '\f189';
-}
 
-/* <p style="text-align: left;">Nebux si collega all’impianto elettrico del condizionatore ed ha un basso assorbimento di energia elettrica.</p> */
+
+
+
+
+
+.accordion-small {
+  max-width: 400px;
+  max-height: 450px;
+}
 
 .header {
   background-color: var(--bs-white);
 }
 
-.links {
-  background-color: var(--color5);
+.about,
+.write-me {
+  background-color: var(--color3);
 }
-
-.news {
-  background-color: var(--color4);
-}
-
+.links,
 .vilen {
   background-color: var(--color5);
 }
-.pict {
-  /* position:end; */
-/* box-sizing: border-box; */
-/* vertical-align: middle;
-padding-bottom: 90%; */
+
+.news,
+.sale {
+  background-color: var(--color4);
 }
 
 .pict-2 {
-  position:end;
+  position: end;
   /* margin-bottom: 19px;
   padding-bottom: 90%; */
 }
-
-.itd_play:hover {
-
-} 
 
 .btn-email {
   display: block;
@@ -71,14 +56,20 @@ padding-bottom: 90%; */
   background-color: var(--color2);
 }
 
-/* .img-nebux {
-  max-width: 300px;
-  margin: 30px 20px;
-  padding: 8px 30px 15px;
+.btn-buy {
   color: var(--bs-white);
-  border-radius: 5%;
-} */
+  background-color: var(--color2);
+}
 
+.btn-buy:hover {
+  color: var(--bs-white);
+  background-color: var(--color1);
+}
+
+.btn-order:hover {
+  color: var(--bs-white);
+  background-color: var(--color1);
+}
 .btn-send {
   display: block;
   max-width: 400px;
@@ -94,19 +85,56 @@ padding-bottom: 90%; */
   background-color: var(--color1);
 }
 
-.btn-order {
-  display: inline;
-  max-width: 100px;
-  margin: 0px auto 0px;
-  padding: 8px 30px 15px;
-  color: var(--bs-white);
-  background-color: var(--color2);
+
+
+@media (max-width: 992px)
+.cell-icon-inst {
+    display: block;
+    margin: 0 auto 1rem auto;
 }
 
-.btn-order:hover {
-  color: var(--bs-white);
-  background-color: var(--color1);
+.cell-icon-inst {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 999px;
+  border-radius: 999px;
+  width: 120px;
 }
+.txt-inst {
+  display: inline-block;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.num-inst {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ico-inst {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  left: 50px;
+  display: inline-block;
+  text-align: center;
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  -webkit-border-radius: 999px;
+  border-radius: 999px;
+  background-color: #fff;
+}
+
+.nebux-inst-item {
+  margin-bottom: 2.6rem;
+}
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -125,7 +153,11 @@ padding-bottom: 90%; */
 }
 
 
-/* Course schedule */
+.icon-vkontakte:before {
+  content: "\f189";
+}
+
+/* Accordion */
 .accordion-button:not(.collapsed) {
   color: var(--bs-white);
   background-color: var(--color2);
@@ -150,6 +182,20 @@ padding-bottom: 90%; */
 .debug {
   border: 1px solid red;
 }
+
+@media (max-width: 767.98px) {
+  .header-container {
+    display: flex;
+    flex-flow: column nowrap;
+
+  }
+
+  .header-container img {
+    margin-bottom: 1rem;
+    width: 220px; 
+    margin: 0 auto;
+  }
+
 /* .itd_play {
 background-color: var(--color1);
 width: 60px;

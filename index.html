@@ -16,23 +16,89 @@
   </head>
   <body>
     <header>
-      <!-- First container -->
-      <div class="container header px-5">
-        <div class="d-flex justify-content-between align-items-center py-5">
+      <!-- Header container -->
+      <div class="container header mb-3 p-4 px-lg-6">
+        <div
+          class="d-flex justify-content-between align-items-center py-6 header-container p-3"
+        >
           <div>
             <img src="img/logo_nebux.png" class="img-fluid img-nebux" />
           </div>
           <div>
-            <a
-              href="#segfor-form-contacts"
-              class="btn btn-order btn-lg text-uppercase"
-              >Заказать</a
+            <button
+              type="button"
+              class="btn btn-lg btn-primary btn-buy text-uppercase px-6"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
             >
+              Где купить
+            </button>
           </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"    
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    <p class="fs-6"><strong>Москва</strong></p>
+                    <p class="fs-7">
+                      - Головной офис, ул. Ижорская, д. 7 с. 6 +7 (495)
+                      585-70-90 +7(495) 782-72-63 5171852@mail.ru
+                    </p>
+                    <p class="fs-7">
+                      На Можайке, р.п. Новоивановское, Можайское шоссе д. 165 +7
+                      925 964 27 00 +7(495) 585 70 90 9259642700@mail.ru
+                    </p>
+                    <p class="fs-6"><strong>Калуга</strong></p>
+                    <p class="fs-7">
+                      - ул. Параллельная, д. 11, стр. 16А +79307540189  +74842-40-01-89 89307540189@mail.ru
+                    </p>
+                    <p class="fs-6"><strong>Ярославль      </strong></p>
+                    <p class="fs-7">
+                    - ул. Лисицына, д.3А, литер В, офис 110 +7 920 101 00 91  +7 4852 78 91 95 789195@mail.ru
+                    </p>
+                    <p class="fs-6"><strong>Тула      </strong></p>
+                    <p class="fs-7">
+                    - ул. Октябрьская, д.184 +7 930 899 90 62  +7 4872 79 25 17 9308999062@mail.ru
+                    </p>
+                    <p class="fs-6"><strong>Рязань      </strong></p>
+                    <p class="fs-7">
+                    - ул. Западная, д. 4 +7 930 788 83 68 +7 4912 51 28 68 7888368@mail.ru
+                    </p>
+                    <p class="fs-6"><strong>Тверь      </strong></p>
+                    <p class="fs-7">
+                    - Тверь, ул. 1-ая Трусова, д. 33, помещение 4 +7 930 165 05 44 +7 4822 75 05 44 750544@mail.ru
+                    </p>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Закрыть"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#segfor-form-contacts"
+            class="btn btn-lg btn-primary w-lg-75 btn-buy text-uppercase"
+            >Заказать</a
+          >
         </div>
+
         <div
           id="carouselExampleInterval"
-          class="carousel slide p-0 mb-5 bg-body rounded"
+          class="carousel slide p-0 mb-6 bg-body rounded"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner shadow-lg" style="border-radius: 25px">
@@ -67,10 +133,10 @@
         </div>
       </div>
     </header>
-    <!-- First container -->
+    <!-- Header container -->
 
-    <!-- Second container -->
-    <div class="container-fluid about mb-5 p-5">
+    <!-- About container -->
+    <div class="container-fluid about mb-4 p-4">
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-12">
           <div class="pict">
@@ -85,35 +151,38 @@
         <div class="col-xl-6 col-lg-12">
           <div class="pict-2">
             <h1 class="text-center text-uppercase color1 mb-3">
-              Что такое Nebux
+              <u>Что такое Nebux</u>
             </h1>
-
-            <p>
-              Nebux — это новая запатентованная NBX система, разработанная
-              Migani Andrea для распыления конденсата из кондиционера.
+            <p class="fs-4">
+              Nebux — это новая запатентованная NBX система, разработанная для
+              удаления конденсата из кондиционера путём распыления его в воздух.
             </p>
-            <p>
-              Система построена очень просто и состоит из нескольких элементов,
-              чтобы снизить риск сбоев и поломок.
-            </p>
-            <p>
+            <p class="fs-4">
               Центральный аппарат (насос), защищенный белой коробкой, трубка для
               сбора сточных вод, трубка для утилизации распылителя и конечная
               насадка должны быть соединены только друг с другом, чтобы решить
               проблему слива конденсата практичным и экономичным способом.
             </p>
-            <p>....</p>
+            <p class="fs-4">
+              Небольшое устройство, его размеры: 20 х 10 х 15 см. Можно
+              разместить Nebux под наружным блоком домашнего кондиционера (как
+              на демонстрационном фото).
+            </p>
+            <p class="fs-4">
+              Система построена очень просто и состоит из нескольких элементов,
+              чтобы снизить риск сбоев и поломок.
+            </p>
           </div>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-12" youtube-1>
           <h4 class="text-center color1 mb-3">
-            Посмотрите видео и убедитесь сами, насколько быстро и легко можно
+            Посмотрите видео и вы увидите, насколько быстро и легко можно
             установить Nebux® в вашу систему кондиционирования!
           </h4>
 
-          <div class="ratio ratio-16x9 shadow-lg mb-5">
+          <div class="ratio ratio-16x9 shadow-lg mb-6 p-6">
             <iframe
               src="https://www.youtube.com/embed/--RzwwUARMg"
               title="YouTube video"
@@ -124,10 +193,10 @@
         </div>
       </div>
     </div>
-    <!-- Second container -->
+    <!-- About container -->
 
-    <!-- 3rd container -->
-    <div class="container-fluid news mb-5 p-5">
+    <!-- News container -->
+    <div class="container-fluid news mb-3 p-3">
       <div class="row justify-content-center">
         <div class="col-xl-4 col-lg-12">
           <div class="umbrella">
@@ -141,42 +210,46 @@
 
         <div class="col-xl-4 col-lg-12">
           <div class="news AC">
-            <h1 class="text-center text-uppercase color1 mb-3">
+            <h3 class="text-center text-uppercase color1 mb-3">
               Важно знать монтажнику и собственнику кондиционера:
-            </h1>
-            <p>
-              Часто кондиционеры на фасадах домов устанавливают без соблюдения
-              норм, что может привести к требованию демонтировать оборудование.
-            </p>
-            <p>
-              В Госдуму хотят внести законопроект, который предлагает штрафовать
-              за конденсат, который капает с кондиционеров, — на головы прохожим
-              на улице, на соседские окна и подоконники, фасады зданий, крыши
-              балконов. При установке необходимо соблюдать нормы СанПиН, потому,
-              что строительные нормы запрещают выводить конденсат на фасады
-              зданий и предусматривается применение систем общего сбора и отвода
-              конденсата в ливневую или бытовую канализацию.
-            </p>
-            <p>
-              Чтобы владельцы кондиционеров не нарушали покой граждан, депутаты
-              предлагают один из трех вариантов:
-            </p>
-            <li>выводить конденсат в ливневую канализацию;</li>
-            <li>
-              выводить конденсат через бытовую канализацию (в случае вывода
-              конденсата с разрывом струи через гидрозатвор);
-            </li>
-            <li>
-              оборудовать и разместить специальный резервуар, чтобы собирать
-              конденсат и не допускать его утечки или распространения.
-            </li>
+            </h3>
+            <h class="fs-6">
+              <p>
+                Часто кондиционеры на фасадах домов устанавливают без соблюдения
+                норм, что может привести к требованию демонтировать
+                оборудование.
+              </p>
+              <p>
+                В Госдуму хотят внести законопроект, который предлагает
+                штрафовать за конденсат, который капает с кондиционеров, — на
+                головы прохожим на улице, на соседские окна и подоконники,
+                фасады зданий, крыши балконов. При установке необходимо
+                соблюдать нормы СанПиН, потому, что строительные нормы запрещают
+                выводить конденсат на фасады зданий и предусматривается
+                применение систем общего сбора и отвода конденсата в ливневую
+                или бытовую канализацию.
+              </p>
+              <p>
+                Чтобы владельцы кондиционеров не нарушали покой граждан,
+                депутаты предлагают один из трех вариантов:
+              </p>
+              <li>выводить конденсат в ливневую канализацию;</li>
+              <li>
+                выводить конденсат через бытовую канализацию (в случае вывода
+                конденсата с разрывом струи через гидрозатвор);
+              </li>
+              <li>
+                оборудовать и разместить специальный резервуар, чтобы собирать
+                конденсат и не допускать его утечки или распространения.
+              </li>
 
-            <p>
-              <strong>
-                А мы предлагаем, простое решение, которое избавит Вас от любых
-                проблем с конденсатом - установить систему NEBUX!</strong
-              >
-            </p>
+              <p>
+                <strong>
+                  А мы предлагаем, простое решение, которое избавит Вас от любых
+                  проблем с конденсатом - установить систему NEBUX!</strong
+                >
+              </p>
+            </h>
           </div>
         </div>
 
@@ -187,27 +260,76 @@
         </div>
       </div>
     </div>
-    <!-- 3rd container -->
+    <!-- News container -->
 
-    <!-- 4th container -->
-    <div class="container-fluid vilen p-5">
+    <!-- Vilen container -->
+    <div class="container-fluid vilen">
       <div class="row justify-content-start">
-        <div class="col-xl-6 col-lg-12">
-          <div class="setup">
-            <h1 class="text-center text-uppercase color1 mb-3">
-              Описание видео от Вилена
-            </h1>
-
-            <p>......................</p>
-            <p>...............</p>
-            <p>.......................</p>
-            <p>..................</p>
+        <div class="col-xl-6 col-lg-12 mt-5">
+          <h1 class="text-center text-uppercase color1">
+            <u>Как установить NEBUX</u>
+          </h1>
+          <div class="section">
+            <div class="nebux-inst-item">
+              <div class="cell-icon-inst">
+                <span class="num-inst">1</span>
+                <span class="ico-inst"
+                  ><img src="img/icon_trapano.png" alt="icon"
+                /></span>
+              </div>
+              <span class="txt-inst"
+                >Просверлите 2 отверстия в стене и закрепите Nebux в нужной
+                точке.</span
+              >
+            </div>
+            <div class="nebux-inst-item">
+              <div class="cell-icon-inst">
+                <span class="num-inst">2</span>
+                <span class="ico-inst"
+                  ><img src="img/icon_tubo.png" alt="icon"
+                /></span>
+              </div>
+              <span class="txt-inst"
+                >Подсоедините шланг для слива конденсата к Nebux.</span
+              >
+            </div>
+            <div class="nebux-inst-item">
+              <div class="cell-icon-inst">
+                <span class="num-inst">3</span>
+                <span class="ico-inst"
+                  ><img src="img/icon_clima.png" alt="icon"
+                /></span>
+              </div>
+              <span class="txt-inst"
+                >Поместите сопло в решетку системы кондиционирования
+                воздуха.</span
+              >
+            </div>
+            <div class="nebux-inst-item">
+              <div class="cell-icon-inst">
+                <span class="num-inst">4</span>
+                <span class="ico-inst"
+                  ><img src="img/icon_spina.png" alt="icon"
+                /></span>
+              </div>
+              <span class="txt-inst">Подключить Nebux к сети.</span>
+            </div>
+            <div class="nebux-inst-item">
+              <div class="cell-icon-inst">
+                <span class="num-inst">6</span>
+                <span class="ico-inst"
+                  ><img src="img/icon_aria.png" alt="icon"
+                /></span>
+              </div>
+              <span class="txt-inst"
+                >Включите кондиционер и дождитесь первого распыления.</span
+              >
+            </div>
           </div>
         </div>
-        <div class="col-xl-6 col-lg-12">
-          <h2 class="text-center text-uppercase color1 mb-3">Видео Вилена</h2>
-
+        <div class="col-xl-6 col-lg-12 mt-5">
           <div class="ratio ratio-16x9">
+            <br />
             <iframe
               src="https://www.youtube.com/embed/--RzwwUARMg"
               title="YouTube video"
@@ -217,10 +339,151 @@
         </div>
       </div>
     </div>
-    <!-- 4th container -->
+    <!-- Vilen container -->
 
-    <!-- 5th container -->
-    <div class="container accordion mb-5 p-5">
+    <!-- Sale container -->
+    <div class="container-fluid sale mb-4 p-4">
+      <div class="row justify-content-start mb-3">
+        <div class="col-xl-5 col-lg-12">
+          <div class="nebux-classic">
+            <img src="img/nebux_classic.jpg" class="img-fluid img-nebux" />
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-12">
+          <div class="nebux-standart">
+            <h1 class="text-center text-uppercase color1 mb-3">
+              <u>Nebux Classic ®</u>
+            </h1>
+            <p class="fs-6">
+              Nebux Classic, состоит из нескольких элементов, чтобы снизить риск
+              сбоев и поломок. Центральный аппарат (насос и мембрана),
+              защищенный белой коробкой, трубка для сбора сточных вод, трубка
+              для утилизации распыления и конечная насадка, которые нужно только
+              соединить друг с другом, чтобы решить проблему слива конденсата.
+              практичным, быстрым и экономичным способом!
+              <br />
+              <br />
+              Nebux Classic ® устанавливается в сплит-системе до 6.5кВт и в
+              мульти сплит-системе до 2.5кВт.
+            </p>
+            <div class="accordion-small">
+              <h2 class="accordion-header" id="heading1">
+                <button
+                  class="accordion-button w-lg-75 text-uppercase fs-6"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#user1"
+                  aria-expanded="true"
+                  aria-controls="collapse"
+                >
+                  Характеристики
+                </button>
+              </h2>
+              <div
+                id="user1"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading1"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion w-lg-75 fst-italic">
+                  <br />
+                  <p>Уровень шума - <30 дБ(А)</p>
+                  <p>Производительность - 6 л/час</p>
+                  <p>Макс. длина распылительной трубки - 50м</p>
+                  <p>Высота подъема распылительной трубки - 10м</p>
+                  <p>Питание - 220-240V</p>
+                  <p>Макс. мощность - 65Вт</p>
+                  <p>Плавкий предохранитель - 0,5А (5х20 мм) 220-240V</p>
+                  <p>Температура воды - 4° - 40°C</p>
+                  <p>Размеры - 170 х 130 х 70мм</p>
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+          <h2 class="text-start color-black mb-3">
+            <p>цена: 14 900 ₽</p></h2>
+                    <a
+            href="https://t.me/Vash_klimat_manager"
+            class="btn btn-lg btn-primary w-lg-75 btn-buy text-uppercase"
+            target="_blank"
+            >Забронировать</a
+          >
+        </div>
+      </div>
+      <div class="row justify-content-start mb-6">
+        <div class="col-xl-5 col-lg-12">
+          <div class="nebux-classic">
+            <img src="img/nebux_standard.jpg" class="img-fluid img-nebux" />
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-12">
+          <div class="nebux-standart">
+            <h1 class="text-center text-uppercase color1 mb-3">
+              <u>Nebux Standart ®</u>
+            </h1>
+            <p class="fs-6">
+              Nebux Standard , имеет те же качества и размеры, что и Classic, но
+              отличается добавлением внешнего поплавка (без лотка) для решения
+              проблем неровностей в подуровневом отводе конденсата, который
+              также можно использовать при наличии кондиционеров в туристических
+              кемперах. Имеет датчик перелива.
+              <br />
+              <br />
+              Снаружи есть светодиоды разных цветов для индикации питания,
+              работы и аномалий. Все они оснащены 2 форсунками из нержавеющей
+              стали, устойчивыми к коррозии.
+            </p>
+            <div class="accordion-small">
+              <h2 class="accordion-header" id="heading1">
+                <button
+                  class="accordion-button w-lg-75 text-uppercase fs-6"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#user2"
+                  aria-expanded="true"
+                  aria-controls="collapse"
+                >
+                  Характеристики
+                </button>
+              </h2>
+              <div
+                id="user2"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading1"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion w-lg-75 fst-italic">
+                  <br />
+                  <p>Уровень шума - <24 дБ(А)</p>
+                  <p>Производительность - 6 л/час</p>
+                  <p>Макс. длина распылительной трубки - 50м</p>
+                  <p>Высота подъема распылительной трубки - 10м</p>
+                  <p>Питание - 220-240V</p>
+                  <p>Макс. мощность - 65Вт</p>
+                  <p>Плавкий предохранитель - 0,5А (5х20 мм) 220-240V</p>
+                  <p>Температура воды - 4° - 40°C</p>
+                  <p>Размеры - 170 х 130 х 70мм</p>
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+          <h2 class="text-start color-black mb-3">
+            <p>цена: 14 900 ₽</p></h2>
+          <a
+            href="https://t.me/Vash_klimat_manager"
+            class="btn btn-lg btn-primary w-lg-75 text-uppercase"
+            target="_blank"
+            >Забронировать</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Sale container -->
+
+    <!-- Accordion container -->
+    <div class="container accordion mb-5 p-6">
       <div class="row justify-content-center">
         <div class="col-xl-6 col-lg-12">
           <h2 class="justify-content-center text-uppercase color1 mb-3">
@@ -231,7 +494,7 @@
         <div class="accordion" id="accordion1">
           <div class="accordion-item">
             <h2 class="accordion-header" id="heading1">
-              <button
+              <button 
                 class="accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
@@ -239,7 +502,7 @@
                 aria-expanded="true"
                 aria-controls="collapse1"
               >
-                Сколько энергии он потребляет?
+                Каким кондиционерам подходит Nebux?
               </button>
             </h2>
             <div
@@ -249,8 +512,9 @@
               data-bs-parent="#accordion1"
             >
               <div class="accordion-body fst-italic">
-                Nebux подключается к электрической системе кондиционера и имеет
-                низкое энергопотребление. Расчетное потребление: 65 Вт.
+                NEBUX СОВМЕСТИМ с любыми кондиционерами: сплит-системами и
+                мульти сплит-системами. Насос легко подбирается в зависимости от
+                мощности кондиционера.
               </div>
             </div>
           </div>
@@ -260,24 +524,24 @@
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
+                data-bs-target="#collapse2"
                 aria-expanded="false"
-                aria-controls="collapseTwo"
+                aria-controls="collapse2"
               >
-                Могу ли я установить его самостоятельно?
+                Могу ли я самостоятельно установить Nebux?
               </button>
             </h2>
             <div
-              id="collapseTwo"
+              id="collapse2"
               class="accordion-collapse collapse"
               aria-labelledby="heading2"
               data-bs-parent="#accordion1"
             >
               <div class="accordion-body fst-italic">
-                Конечно! Nebux — практичная система, состоящая из «коробки» и
-                двух труб для прохождения воды. Вам понадобится только дрель и
-                немного терпения. Если вы не разбираетесь в технике «сделай
-                сам», рекомендуем обратиться к установщику.
+                Безусловно! NEBUX МОНТИРУЕТСЯ ПРОСТО И БЫСТРО, не требует
+                специальных знаний и занимает максимум 10 минут! Вам необходимо
+                только внимательно прочитать инструкцию по установке и выполнить
+                поэтапно описанные там действия.
               </div>
             </div>
           </div>
@@ -316,7 +580,7 @@
                 aria-expanded="false"
                 aria-controls="collapse4"
               >
-                Chapter-4
+                Сколько энергии он потребляет?
               </button>
             </h2>
             <div
@@ -325,7 +589,10 @@
               aria-labelledby="heading4"
               data-bs-parent="#accordion1"
             >
-              <div class="accordion-body fst-italic">4.0</div>
+              <div class="accordion-body fst-italic">
+                Nebux подключается к электрической системе кондиционера и имеет
+                низкое энергопотребление. Расчетное потребление: до 65 Вт.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
@@ -338,7 +605,7 @@
                 aria-expanded="false"
                 aria-controls="collapse5"
               >
-                Chapter-5
+                Из чего состоит комплектация Nebux?
               </button>
             </h2>
             <div
@@ -347,7 +614,11 @@
               aria-labelledby="heading5"
               data-bs-parent="#accordion1"
             >
-              <div class="accordion-body fst-italic">5.0</div>
+              <div class="accordion-body fst-italic">
+                В комплектацию насоса входят: фильтр грубой очистки на входе,
+                фильтр со стороны всасывания и несколько защит электрических и
+                электронных частей.
+              </div>
             </div>
           </div>
           <div class="accordion-item">
@@ -375,13 +646,13 @@
         </div>
       </div>
     </div>
-    <!-- 5th container -->
+    <!-- Accordion container -->
 
-    <!-- 6th container -->
-    <div class="container-fluid write-me p-5">
+    <!-- Write-me container -->
+    <div class="container-fluid write-me p-3">
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="text-center text-uppercase color1 mb-5">
+          <h2 class="text-center text-uppercase color1 mb-6">
             Свяжитесь с нами
           </h2>
         </div>
@@ -448,10 +719,10 @@
         </div>
       </div>
     </div>
-    <!-- 6th container -->
+    <!-- Write-me container -->
 
-    <!-- 7th container -->
-    <div class="container-fluid links p-5">
+    <!-- Links container -->
+    <div class="container-fluid links p-3">
       <div class="row justify-content-center">
         <div class="col-xl-4 col-lg-12 company">
           <div class="row">
@@ -512,8 +783,35 @@
       </div>
     </div>
 
-    <!-- 7th container -->
-
+    <!-- Links container -->
+    <script src="js/popover.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+    <script>
+      //E-mail Ajax Send
+      $("form").submit(function () {
+        //Change
+        var th = $(this);
+        $.ajax({
+          type: "POST",
+          url: "mail.php", //Change
+          data: th.serialize(),
+        }).done(function () {
+          alert("Thank you!");
+          setTimeout(function () {
+            // Done Functions
+            th.trigger("reset");
+          }, 1000);
+        });
+        return false;
+      });
+    </script>
   </body>
 </html>
